@@ -1,0 +1,153 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+
+  --color-header: #fff;
+  --color-primary: #16DB99;
+  --color-primary-light: color-mix(in srgb, #16DB99 80%, white);
+  --color-muted: #9CA3AF;
+  --color-text: #fff;
+
+
+
+  --space-xsm: 4px;
+  --space-sm: 8px;
+  --space-md: 16px;
+  --space-lg: 32px;
+}
+
+body {
+  min-height: 100vh;
+  font-family:
+    "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+header {
+  max-width: 100vw;
+  height: 10rem;
+  background-image: url("assets/images/tasty-burger.png");
+  background-size: cover;
+  background-position: center;
+  /* filter: brightness(60%); */
+  background-color: #555555;
+  background-blend-mode: darken;
+  color: #fff;
+  padding-left: 2rem;
+  /* text-align: center; */
+}
+
+header h1 {
+  padding-top: 2rem;
+}
+
+h2 {
+  text-align: center;
+}
+
+.container {
+  width: 100%;
+  max-width: 800px;
+  padding: 2rem 3rem;
+  margin: 0 auto;
+}
+
+.menu-item {
+  /* border: 1px solid red; */
+  display: flex;
+  align-items: flex-start;
+  gap: 2rem;
+  border-bottom: 1px solid gray;
+  margin-bottom: 2em;
+}
+
+.emoji {
+  font-size: 3rem;
+}
+
+.item-name {
+  font-weight: 900;
+  font-size: 1.2rem;
+}
+
+.ingredients {
+  opacity: 0.5;
+  margin-bottom: 0.8em;
+}
+
+.price {
+  font-weight: 700;
+  margin-bottom: 0.9em;
+}
+
+.add-item-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  border: 1px solid black;
+  background-color: transparent;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+}
+
+.add-item-btn:hover {
+  transform: scale(1.1);
+}
+
+/* Order Container  */
+.order h2 {
+  text-align: center;
+}
+
+.order-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.remove-item-btn {
+  color: gray;
+  cursor: pointer;
+}
+
+.order-price {
+  margin: 0;
+  margin-left: auto;
+}
+
+.total-price {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+.total-price p {
+  font-weight: 900;
+}
+
+.complete-order-btn {
+  width: 100%;
+  padding: 0.7em 0;
+  font-size: 1rem;
+  font-weight: 800;
+  color: #fff;
+  background-color: green;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.complete-order-btn:hover {
+  filter: brightness(80%);
+}
