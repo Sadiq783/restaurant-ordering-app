@@ -7,14 +7,11 @@
 }
 
 :root {
-
   --color-header: #fff;
-  --color-primary: #16DB99;
-  --color-primary-light: color-mix(in srgb, #16DB99 80%, white);
-  --color-muted: #9CA3AF;
+  --color-primary: #16db99;
+  --color-primary-light: color-mix(in srgb, #16db99 80%, white);
+  --color-muted: #9ca3af;
   --color-text: #fff;
-
-
 
   --space-xsm: 4px;
   --space-sm: 8px;
@@ -32,15 +29,13 @@ body {
 header {
   max-width: 100vw;
   height: 10rem;
-  background-image: url("assets/images/tasty-burger.png");
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.356), rgba(0, 0, 0, 0.356)),
+    url("assets/images/tasty-burger.png");
   background-size: cover;
   background-position: center;
-  /* filter: brightness(60%); */
-  background-color: #555555;
-  background-blend-mode: darken;
   color: #fff;
   padding-left: 2rem;
-  /* text-align: center; */
 }
 
 header h1 {
@@ -59,7 +54,6 @@ h2 {
 }
 
 .menu-item {
-  /* border: 1px solid red; */
   display: flex;
   align-items: flex-start;
   gap: 2rem;
