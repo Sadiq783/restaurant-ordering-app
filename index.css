@@ -124,8 +124,14 @@ h2 {
 }
 
 .remove-item-btn {
+  background-color: var(--color-secondary);
   color: var(--color-muted-2);
+  border: none;
   cursor: pointer;
+}
+
+.remove-item-btn:hover {
+  color: var(--color-muted-1);
 }
 
 .order-price {
