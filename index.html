@@ -41,5 +41,35 @@
         Complete order
       </button>
     </div>
+
+    <div class="card-details-modal" hidden>
+      <h2>Enter card details</h2>
+
+      <form>
+        <input
+          type="text"
+          id="name"
+          name="name"
+          aria-label="name"
+          placeholder="Enter your name"
+        />
+        <input
+          type="number"
+          id="card-number"
+          name="card-number"
+          aria-label="card number"
+          placeholder="Enter card number"
+        />
+        <input
+          type="number"
+          id="cvv-code"
+          name="cvv-code"
+          aria-label="cvv code"
+          placeholder="Enter CVV"
+        />
+
+        <button type="button" class="btn-pay">Pay</button>
+      </form>
+    </div>
   </body>
 </html>
