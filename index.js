@@ -2,6 +2,7 @@ import { menuArray } from "./data.js";
 
 const menu = document.querySelector("#menu");
 const orderContainer = document.querySelector("#order-container");
+const completeOrderBtn = document.querySelector("#complete-order-btn");
 
 const orderItemsArr = [];
 
@@ -83,3 +84,23 @@ function removeItem(targetElement) {
     orderContainer.hidden = true;
   }
 }
+
+completeOrderBtn.addEventListener("click", () => {
+  const cardDetailsModal = document.querySelector("#card-details-modal");
+
+  cardDetailsModal.hidden = false;
+
+  document
+    .querySelector("#card-details-form")
+    .addEventListener("submit", (e) => {
+      e.preventDefault();
+
+      cardDetailsModal.hidden = true;
+
+      orderContainer.innerHTML = `
+        <p class="thank-you-msg">
+          Thanks, James! Your order is on its way!
+        </p>
+      `;
+    });
+});
